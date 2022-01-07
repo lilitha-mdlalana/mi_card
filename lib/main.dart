@@ -26,16 +26,41 @@ class Homepage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children: const [
-            CircleAvatar(
+          children: [
+            const CircleAvatar(
               radius: 50.0,
               backgroundImage: AssetImage('assets/myAvatar.png'),
             ),
-            Text(
+            const Text(
               'Lilitha Mdlalana',
-              style: TextStyle(fontSize: 24,color: Colors.white),
+              style: TextStyle(
+                  fontSize: 40.0,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: 'Pacifico'),
             ),
-            Text('Flutter Developer',style: TextStyle(fontSize: 20,color: Colors.white),),
+            Text(
+              'FLUTTER DEVELOPER',
+              style: TextStyle(
+                fontFamily: 'Source Sans Pro',
+                fontSize: 20,
+                color: Colors.teal.shade100,
+                letterSpacing: 2.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            const Card(
+              child: ListTile(
+                leading: Icon(Icons.phone_android),
+                title: Text('0679871286'),
+              ),
+            ),
+            const Card(
+              child: ListTile(
+                leading: Icon(Icons.email),
+                title: Text('innomdlalala@gmail.com'),
+              ),
+            ),
           ],
         ),
       ),
