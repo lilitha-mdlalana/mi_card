@@ -32,7 +32,7 @@ class Homepage extends StatelessWidget {
               backgroundImage: AssetImage('assets/myAvatar.png'),
             ),
             const Text(
-              'Lilitha Mdlalana',
+              'John Doe',
               style: TextStyle(
                   fontSize: 40.0,
                   color: Colors.white,
@@ -52,13 +52,13 @@ class Homepage extends StatelessWidget {
             const Card(
               child: ListTile(
                 leading: Icon(Icons.phone_android),
-                title: Text('0679871286'),
+                title: Text('10100101010110'),
               ),
             ),
             const Card(
               child: ListTile(
                 leading: Icon(Icons.email),
-                title: Text('innomdlalala@gmail.com'),
+                title: Text('johndoe@example.com'),
               ),
             ),
           ],
